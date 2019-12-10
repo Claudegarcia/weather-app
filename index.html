@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <nav class="justify-content-center navbar text-white bg-dark">
+        <span class="navbar-brand mb-0 h1 ">Weather Dashboard</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 bg-light pt-2">
+                <div class="span font-weight-bold mt-1 mb-2">Search for a City:</div>
+                <div class="input-group">
+
+                    <input id="cityname" type="text" class="form-control" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+
+                        <button class="btn btn-outline-secondary bg-primary font-weight-bold text-white" type="button"
+                            id="searchBtn">Search</button>
+                    </div>
+                </div>
+                <table class="table mt-3 border rounded bg-white">
+                    <tbody>
+                        <tr>
+                            <td class="text-secondary">Austin</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Chicago</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">New York</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Orlando</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">San Francisco</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Seattle</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Denver</td>
+                        </tr>
+                        <tr>
+                            <td class="text-secondary">Atlanta</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-9">
+                <div class="jumbotron jumbotron-fluid mt-3 p-0 pt-3 pb-3 mb-1 border rounded bg-white">
+                    <div class="container">
+                        <h3 id="location" class="mt-0">Location/Date</h3>
+                        <p id="temp" class="lead">Temperature:</p>
+                        <p id="humidity" class="lead">Humidity:</p>
+                        <p id="wind" class="lead">Wind Speed:</p>
+                        <p id="UV" class="lead">UV Index:</p>
+                    </div>
+                </div>
+                <div class="jumbotron jumbotron-fluid mt-2 p-0 pt-3 pb-3 bg-white rounded">
+                    <div class="container">
+
+                        <h3 class="m-0 pb-2">5-Day Forcast:</h3>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="card bg-primary">
+                                    <div class="card-body">
+                                        <p id="date10" class="card-text text-white font-weight-bold">Date</p>
+                                        <p class="card-text text-white"><img id="icon10" src=""></p>
+                                        <p id="temp10" class="card-text text-white">Temp:</p>
+                                        <p id="humidity10" class="card-text text-white">Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-primary">
+                                    <div class="card-body">
+                                        <p id="date18" class="card-text text-white font-weight-bold">Date</p>
+                                        <p class="card-text text-white"><img id="icon18" src=""></p>
+                                        <p id="temp18" class="card-text text-white">Temp:</p>
+                                        <p id="humidity18" class="card-text text-white">Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-primary">
+                                    <div class="card-body">
+                                        <p id="date26" class="card-text text-white font-weight-bold">Date</p>
+                                        <p class="card-text text-white"><img id="icon26" src=""></p>
+                                        <p id="temp26" class="card-text text-white">Temp:</p>
+                                        <p id="humidity26" class="card-text text-white">Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-primary">
+                                    <div class="card-body">
+                                        <p id="date34" class="card-text text-white font-weight-bold">Date</p>
+                                        <p class="card-text text-white"><img id="icon34" src=""></p>
+                                        <p id="temp34" class="card-text text-white">Temp:</p>
+                                        <p id="humidity34" class="card-text text-white">Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card bg-primary">
+                                    <div class="card-body">
+                                        <p id="date39" class="card-text text-white font-weight-bold">Date</p>
+                                        <p class="card-text text-white"><img id="icon39" src=""></p>
+                                        <p id="temp39" class="card-text text-white">Temp:</p>
+                                        <p id="humidity39" class="card-text text-white">Humidity:</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
